@@ -1,0 +1,304 @@
+
+/*------------------------------------*\
+    Universal Styles
+\*------------------------------------*/
+
+html,
+body{
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outer-cell{
+	display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-cell{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+h1,
+.font-h1{
+	font-size: 28px;
+	font-weight: 300;
+}
+
+h2,
+.font-h2{
+	font-size: 22px;
+	font-weight: 300;
+}
+
+p{
+	margin: 0;
+}
+
+/*------------------------------------*\
+    Bio Section
+\*------------------------------------*/
+
+.bio-section{
+	padding: 30px 0;	
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.bio-section{
+		padding: 100px 0;	
+	}
+	
+}
+
+.bio-section .bio-section-image-section,
+.bio-section .bio-section-details{
+	box-sizing: border-box;
+	vertical-align: top;
+	width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.bio-section .bio-section-image-section,
+	.bio-section .bio-section-details{
+		padding: 0 15px;
+	}
+	
+}
+
+.bio-section .bio-section-image-section{
+	display: inline-block;
+	text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.bio-section .bio-section-image-section{
+		text-align: center;
+		width: 40%;
+	}
+
+}
+
+.bio-section .bio-section-image-section .bio-section-image{
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	display: block;
+    margin: 0 auto;
+}
+
+.bio-section .bio-section-details{
+	display: block;
+    margin: 0 auto;
+    max-width: 550px;
+	padding: 30px 0 0 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+
+	.bio-section .bio-section-details{
+		display: inline-block;
+		padding: 0 15px;
+		width: 60%;
+	}
+
+}
+
+.bio-section .bio-section-details .bio-section-full-name{
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+
+	.bio-section .bio-section-details .bio-section-full-name{
+	    text-align: left;
+	}
+
+}
+
+.bio-section .bio-section-details .bio-section-stats{
+	padding: 15px 0;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.bio-section .bio-section-details .bio-section-stats{
+		text-align: left;
+	}
+	
+}
+
+.bio-section .bio-section-details .bio-section-stats .bio-section-posts,
+.bio-section .bio-section-details .bio-section-stats .bio-section-followers,
+.bio-section .bio-section-details .bio-section-stats .bio-section-following{
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0 5px;
+	width: 33%;
+}
+
+@media only screen and (min-width: 768px) {
+
+.bio-section .bio-section-details .bio-section-stats .bio-section-posts,
+.bio-section .bio-section-details .bio-section-stats .bio-section-followers,
+.bio-section .bio-section-details .bio-section-stats .bio-section-following{
+	padding: 0;
+}
+	
+}
+
+.bio-section .bio-section-details .bio-section-username{
+	padding: 0 0 5px 0;
+}
+
+/*------------------------------------*\
+    Image Section
+\*------------------------------------*/
+
+.image-section{
+	margin: 0 auto;
+    max-width: 550px;
+	padding: 30px 0;	
+}
+
+@media only screen and (min-width: 992px) {
+
+	.image-section{
+	    max-width: none;
+	    padding: 100px 0;
+	}
+	
+}
+
+.image-section .image-section-title-section{
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+
+	.image-section .image-section-title-section{
+		padding-bottom: 30px;
+	}
+	
+}
+
+.image-section .image-section-title-section .image-section-title{
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.image-section .image-section-title-section .image-section-title{
+		padding-bottom: 15px;
+	}
+	
+}
+
+.image-section .image-section-title-section i{
+	color: #000000;
+	font-size: 30px;
+}
+
+.image-section .image-section-grid-section{
+	overflow: auto; 
+}
+
+.image-section .image-section-grid-section .image-section-image{
+	box-sizing: border-box;
+	float: left;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+	width: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+
+	.image-section .image-section-grid-section .image-section-image{
+		padding: 0 15px;
+		width: 25%;
+	}
+	
+}
+
+.image-section .image-section-grid-section .image-section-image:nth-child(-n+2){
+	padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+
+	.image-section .image-section-grid-section .image-section-image:nth-child(-n+2){
+		padding-bottom: 0;
+	}
+	
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner{
+	position: relative;
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-bg-overlay,
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-icons-overlay{
+	display: none;
+}
+
+@media only screen and (min-width: 992px) {
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-bg-overlay,
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-icons-overlay{
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: all 1s;
+	width: 100%;
+}
+	
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner:hover .image-section-bg-overlay{
+	opacity: 0.8;
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner:hover .image-section-icons-overlay{
+	opacity: 1;
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-bg-overlay{
+	background-image: linear-gradient(#d6249f, #285AEB);
+	mix-blend-mode: multiply;
+	z-index: 1;
+}
+
+.image-section .image-section-grid-section .image-section-image .image-section-image-inner .image-section-icons-overlay{
+	box-sizing: border-box;
+	color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    z-index: 2;
+}
