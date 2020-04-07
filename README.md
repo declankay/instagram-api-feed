@@ -11,6 +11,9 @@ Main features:
 - Image section that displays the latest 4 images from an Instagram account with a hover effect that shows the number of likes and comments on each post.
 - Both sections are responsive and use breakpoints inline with Bootstrap 3.
 
+Live demo:
+https://declankay.com/instagram-api-demo/
+
 Dependencies:
 - JQuery
 - Font Awesome
